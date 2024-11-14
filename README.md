@@ -25,3 +25,7 @@ This project aims to build a model that can recognize handwritten characters usi
 The dataset used in this project includes a variety of handwritten character images. Each image represents a single character, enabling the model to learn and classify individual symbols effectively.
 
 ## Demo Video
+
+
+https://github.com/user-attachments/assets/58f50c11-4673-4966-820e-522507a150fe
+
