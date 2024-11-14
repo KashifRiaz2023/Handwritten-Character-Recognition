@@ -1,53 +1,27 @@
-# Handwriting Recognition Project
+# Handwritten Character Recognition System
 
-## Overview
-This project implements a handwriting recognition model using a neural network trained on the MNIST dataset.
+This project aims to build a model that can recognize handwritten characters using deep learning techniques. The model classifies individual characters and can be extended to recognize entire words or sentences.
 
-## Code Description
+## Features
 
-### Libraries Used
-- *NumPy*: Numerical operations
-- *Matplotlib*: Visualization
-- *TensorFlow/Keras*: Model building and training
+- Classification of individual handwritten characters.
+- Utilization of Convolutional Neural Networks (CNNs) for accurate character recognition.
+- Data preprocessing techniques for effective model training.
+- Evaluation metrics to assess model accuracy and generalization.
+- Functionality to make predictions on new handwritten samples.
 
-### Key Code Sections
+## Algorithm Used
 
-1. *Import Libraries*
-   python
-   import numpy as np
-   import matplotlib.pyplot as plt
-   
+- **Convolutional Neural Network (CNN)**: A deep learning model designed to effectively handle image data. CNNs automatically learn spatial features, making them ideal for recognizing complex patterns in handwritten characters.
 
-2. *Set Visualization Styles*
-   python
-   plt.style.use('fivethirtyeight')
-   plt.xkcd()
-   
+## Tech Stack
 
-3. *Create Subplots*
-   python
-   fig, axes = plt.subplots(3, 3, figsize=(12, 15))
-   axes = axes.flatten()
-   
+- **Python**
+- **TensorFlow** / **Keras**
+- **OpenCV**
 
-4. *Display Test Images and Predictions*
-   python
-   for i, ax in enumerate(axes):
-       img = np.reshape(x_test[i], (28, 28))
-       ax.imshow(img, cmap='Greys')
-       pred = word_dict[np.argmax(categorical_test[i])]
-       ax.set_title("Prediction: " + pred, fontsize=20, fontweight='bold', color='red')
-   
+## Dataset
 
-## How to Run
-1. Install the required libraries:
-   bash
-   pip install numpy matplotlib tensorflow
-   
-2. Load your model and test data, then run the script in a Python environment.
+The dataset used in this project includes a variety of handwritten character images. Each image represents a single character, enabling the model to learn and classify individual symbols effectively.
 
-## Conclusion
-This project visualizes predictions from a handwriting recognition model on the MNIST dataset.
-
-## License
-MIT License
+## Demo Video
